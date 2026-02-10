@@ -1,62 +1,52 @@
-# Word Counter Extension
+# Word Counter - Raycast Extension for Windows
 
-Uma extensão simples e rápida para Raycast que conta caracteres, palavras, linhas e muito mais em qualquer texto.
+Count characters, words, lines, sentences, and paragraphs in any text with real-time statistics.
 
-## Funcionalidades
+## Features
 
-- **Contagem de caracteres** - Total de caracteres incluindo espaços
-- **Contagem de caracteres sem espaços** - Total excluindo todos os espaços
-- **Contagem de palavras** - Total de palavras separadas por espaços
-- **Contagem de linhas** - Total de linhas no texto
-- **Contagem de sentenças** - Estimativa aproximada de sentenças
-- **Contagem de parágrafos** - Parágrafos separados por linhas vazias
+- **Character count** - Total characters including spaces
+- **Character count (no spaces)** - Total characters excluding spaces
+- **Word count** - Total words separated by spaces
+- **Line count** - Total lines in text
+- **Sentence count** - Approximate sentence estimation
+- **Paragraph count** - Paragraphs separated by blank lines
+- **Real-time updates** - Statistics update instantly as you type
+- **Color-coded icons** - Visual distinction for each metric
+- **Formatted numbers** - Numbers formatted with locale separators
+- **Copy individual values** - Click any metric to copy its value
+- **Copy all statistics** - Copy all stats at once with `Ctrl+C`
 
-## Como usar
+## How to Install
 
-1. Abra o Raycast e busque por "Count Words and Characters"
-2. Cole ou digite seu texto **diretamente no campo de busca** do Raycast
-3. As estatísticas aparecem em **tempo real** em linhas separadas
-4. Cada métrica tem sua própria linha com ícone colorido e valor formatado
-5. Clique em qualquer métrica para copiar apenas aquele valor
-6. Use `Ctrl+C` para copiar todas as estatísticas de uma vez
+1. Install Node.js (`winget install -e --id OpenJS.NodeJS`)
+2. Clone the repository
+3. Run: `npm install` then `npm run dev`
 
-## Interface
+## Usage
 
-A extensão usa o campo de busca nativo do Raycast (igual ao Shapes Library), com cada estatística exibida em uma linha separada:
+1. Open Raycast and search for "Count Words and Characters"
+2. Paste or type your text **directly in the search bar**
+3. Statistics appear **in real-time** as separate list items
+4. Each metric shows a colored icon and formatted value
+5. Click any metric to copy just that value
+6. Use `Ctrl+C` to copy all statistics at once
 
-- **Ícones coloridos** para cada tipo de métrica
-- **Valores formatados** em português (ex: 1.234 ao invés de 1234)
-- **Descrição** de cada métrica
-- **Empty view** quando não há texto
+## Keyboard Shortcuts
 
-## Atalhos de teclado
+- **Enter**: Copy selected metric value
+- **Ctrl+C**: Copy all statistics
+- **Ctrl+X**: Clear all text
 
-- `Enter` - Copiar valor da métrica selecionada
-- `Ctrl+C` - Copiar todas as estatísticas
-- `Ctrl+X` - Limpar todo o texto
+## Changelog
 
-## Desenvolvimento
+### Version 1.0.0
+- 🚀 **Initial release**: Word Counter extension for Raycast Windows
+- 📊 **Real-time statistics**: Character, word, line, sentence, and paragraph counts
+- 🎨 **Color-coded icons**: Visual distinction for each metric type
+- 📋 **Copy actions**: Copy individual values or all statistics at once
+- 🔢 **Formatted numbers**: Brazilian Portuguese locale formatting (1.234 instead of 1234)
+- ⌨️ **Keyboard shortcuts**: Ctrl+C for copy all, Ctrl+X for clear text
 
-```bash
-# Instalar dependências
-npm install
-
-# Modo desenvolvimento (auto-reload)
-npm run dev
-
-# Build para produção
-npm run build
-
-# Lint
-npm run lint
-npm run fix-lint
-```
-
-## Requisitos
-
-- Raycast para Windows
-- Node.js 18.18.4 ou superior
-
-## Licença
+## License
 
 MIT
